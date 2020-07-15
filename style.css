@@ -2,7 +2,6 @@
     --padding-height: 8px;
 }
 
-
 @keyframes spin
 {
    0%{transform: rotate(0deg);} 
