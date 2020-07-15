@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    </head>
+    <body>
+            <nav>
+                <a href="/">Home</a>
+                <a href="myInterests.html">My Interests</a>
+                <a href="jumpMan.html">JumpMan</a>
+                <a href="everyScore.html">Every JumpMan Score</a>
+                <a href="http://hills-connection.herokuapp.com/" target="_blank">My Real-time Drawing App</a>
+                <a href="thingsMade.html">Programming</a>
+                <a href="SwapperWord.html">SwapperMagoo</a>
+            </nav>
+        <h1>Enter Two Words and Watch Them Swaperoo</h1>
+        <input type="text">
+        <br>
+        <button id="button">Swaperoo!</button>
+        <p id="swapped"></p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <script>
+
+            function whichChar(word)
+            {
+                for(var i = 0; i < word.length; i++)
+                {
+                    if(word[i] == "a") return "a";
+                    if(word[i] == "e") return "e";
+                    if(word[i] == "i") return "i";
+                    if(word[i] == "o") return "o";
+                    if(word[i] == "u") return "u";
+                    if(word[i] == "y") return "y";
+                }
+                return "";
+            }
+
+            function swap(word)
+            {
+                if(word.indexOf(" ") != -1)
+                {
+                    var firstWord = word.substring(0, word.indexOf(" "));
+                    var fFirst = (firstWord.indexOf(whichChar(firstWord)) != 0) ? 
+                            firstWord.substring(0, word.indexOf(whichChar(word))) : "";
+                    var sFirst = firstWord.substring(fFirst.length);
+                    
+                    var secondWord = word.substring(word.indexOf(" ") + 1);
+                    var fSecond = (secondWord.indexOf(whichChar(secondWord)) != 0) ? 
+                            secondWord.substring(0, secondWord.indexOf(whichChar(secondWord))) : "";
+                    var sSecond = secondWord.substring(fSecond.length);
+
+                    return fSecond + sFirst + " " + fFirst + sSecond;
+                }
+            }
+
+            function howManyWords(word)
+            {
+                var sum = 0;
+                for(var i = 0; i < word.length; i++)
+                {
+                    if(word[i] == " ")  sum++;
+                }
+                return sum + 1;
+            }
+
+            $(document).ready(function()
+            {
+                document.getElementById("button").onclick = function()
+                {
+                    var orig = $("input").val();
+
+                    if(howManyWords(orig) == 2)
+                    {
+                        var swapped = swap(orig.toLowerCase());
+                        $("#swapped").html("Result:<br>" + swapped);
+                    }
+                    else if(howManyWords(orig) > 2)
+                    {
+                        alert("You have typed more than two words");
+                    }
+                    else
+                    {
+                        alert("You have typed only one or no words");
+                    }
+                }
+            })
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+:root{
+    --padding-height: 8px;
+}
+
+
+@keyframes spin
+{
+   0%{transform: rotate(0deg);} 
+   25%{transform: rotate(90deg);} 
+   50%{transform: rotate(180deg);} 
+   75%{transform: rotate(270deg);} 
+   100%{transform: rotate(360deg);} 
+}
+@keyframes reverseSpin
+{
+   0%{transform: rotate(360deg);} 
+   25%{transform: rotate(270deg);} 
+   50%{transform: rotate(180deg);} 
+   75%{transform: rotate(90deg);} 
+   100%{transform: rotate(0deg);} 
+}
+
+@keyframes fadeIn
+{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+body
+{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(blue, orange); /* Standard syntax (must be last) */    
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    margin-top: 70px;
+    margin-left: 0px;
+}
+
+h1
+{
+    font-size: 50px;
+}
+
+h3
+{
+    font-size: 30px;
+}
+
+
+
+#youtube
+{
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+#instagram
+{
+    animation-name: reverseSpin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#twitter
+{
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-right: 50px;
+}
+
+#soundcloud
+{
+    animation-name: reverseSpin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+p
+{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 20px;
+}
+
+
+nav
+{
+    padding: 14px;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: white;
+    padding: 14px 14px;
+    font-size: 18px;
+}
+
+#fun-time
+{
+    color: greenyellow;
+    font-size: 50px;
+}
+
+nav a:hover
+{
+    background-color:yellow;
+    color: black;
+}
+
+#jumpManBody
+{
+    background-image: linear-gradient(#646464,lime)
+}
+
+#programming img
+{
+    width: 10%;
+}
+
+table 
+{
+    border-collapse: collapse;
+    font-size: 40px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+table, th, td
+{
+    border: 3px solid black;
+}
+
+
+th{background-color: white;}
+tr:nth-child(odd){background-color: yellow;}
+tr:nth-child(even){background-color: orange;}
+tr:hover{background-color: magenta;}
+
+
+
+input
+{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 10%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#button
+{
+    font-size: 50px;
+    border: none;
+    background-color: greenyellow;
+    color: red;
+    margin: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#button:hover
+{
+    color: greenyellow;
+    background-color: red;
+    cursor: pointer;
+}
+
+#swapped
+{
+    font-size: 80px;
+    font-style: italic;
+    color: white;
+}
+
