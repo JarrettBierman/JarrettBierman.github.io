@@ -9,7 +9,7 @@ function setup(){
 function draw(){
     var letterX = mouseX - w/2;
     var letterY = mouseY - h/2;
-    var letterDivisor = 150;
+    var letterDivisor = [75, 80, 85, 90, 95, 100, 125, 150, 175, 200, 225, 250, 275, 300];
     var letterSize = 200;
     var textXOffset = 0;
     var textYOffset = 75;
@@ -21,11 +21,12 @@ function draw(){
     textFont("Lucida Sans Unicode");
     fill(0);
     fill("#888aa8");
-    text("Jarrett Bierman", width/2 + letterX/letterDivisor + textXOffset, height/2 + letterY/letterDivisor + textYOffset); //bottom jb
-    textSize(letterSize);
+    for(var i = 0; i < letterDivisor.length; i++){
+        text("Jarrett Bierman", width/2 + letterX/letterDivisor[i] + textXOffset, height/2 + letterY/letterDivisor[i] + textYOffset); //bottom jb
+    }
     fill("#25274d");
     text("Jarrett Bierman", width/2 + textXOffset, height/2 + textYOffset); //top jb
 
-    //helping things
-    console.log(letterX/letterDivisor + " , " + letterY/letterDivisor);
+    // //helping things
+    // console.log(letterX/letterDivisor[0] + " , " + letterY/letterDivisor[0]);
 }
