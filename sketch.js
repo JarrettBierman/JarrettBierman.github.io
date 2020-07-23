@@ -26,7 +26,4 @@ function draw(){
     }
     fill("#25274d");
     text("Jarrett Bierman", width/2 + textXOffset, height/2 + textYOffset); //top jb
-
-    // //helping things
-    // console.log(letterX/letterDivisor[0] + " , " + letterY/letterDivisor[0]);
 }
