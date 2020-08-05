@@ -196,5 +196,11 @@ transition: 0.3s ease;
     width: 300px;
 }
 
+#projects a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
 
 
