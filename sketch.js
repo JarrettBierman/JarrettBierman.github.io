@@ -2,7 +2,7 @@ let w = 1600;
 let h = 300;
 
 function setup(){
-    var canvas = createCanvas(w, h);
+    var canvas = createCanvas(1500, 400);
     canvas.parent('sketch');
 }
 
@@ -14,8 +14,8 @@ function draw(){
     var textXOffset = 0;
     var textYOffset = 75;
 
+    // background("#f8e9a1");
     background("#f8e9a1");
-    // background(230);
     textSize(letterSize);
     textAlign(CENTER);
     textFont("Lucida Sans Unicode");
