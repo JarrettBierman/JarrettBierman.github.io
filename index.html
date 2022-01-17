@@ -1,36 +1,293 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Jarrett Bierman</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
-        <link rel="icon" href="logos/website_logo.ico">
-        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-        <script src="p5.js"></script>
-        <script src="sketch.js"></script>
-    </head>
-    <body>
-        <nav>
-            <a href="/">Home</a>
-            <a href="about.html">About</a>
-            <a href="resumes/resumeV1.pdf" download target="_blank">Resume</a>
-        </nav>
-        <h1>Hello. This is the Website of</h1>    
-        <div id="sketch" width="100%"></div>
-        <h1>Computer Science Student at the University of Michigan</h1>
 
-        <div class="grow">
-            <a href="https://github.com/JarrettBierman" target="_blank">
-                <img class="logo" src="logos/github.png">
-            </a>
+<head>
+    <title>Jarrett Bierman</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="icon" href="logos/website_logo.ico">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="p5.js"></script>
+    <script src="sketch.js"></script>
+</head>
 
-            <a href="https://www.linkedin.com/in/jarrett-bierman-0aa6a71ab/" target="_blank">
-                <img class="logo" src="logos/linkedin.png">
-            </a>
-            
-            <a href="https://www.facebook.com/profile.php?id=100008701866266&ref=bookmarks" target="_blank">
-                <img class="logo" src="logos/facebook.png">
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="resumes/resumeV2.pdf" download target="_blank">Resume</a>
+    </nav>
+    <h1>Hello. My name is</h1>
+    <!-- <div id="sketch" width="100%"></div> -->
+    <img src="logos/website_logo_big.png" alt="Jarrett Bierman" width="80%">
+    <h1>Computer Science Student at the University of Michigan</h1>
+
+    <img class="portrait" src="logos/photoOfMeCircle.png">
+
+    <h1>About Me</h1>
+    <p>I am a current junior at the University of Michgian pursuing a Bachelor of Science degree in Computer
+        Science.
+        I have interest and expierence in a diverse range of programming disciplines including object-oriented systems,
+        full stack web development, network security, computer vision, machine learning, and video game development.
+        Additional
+        interests of mine include music performance/production,
+        video editing, video games, and golf. To find out more about my qualifications, check out my resume linked
+        above.
+    </p>
+    <h1>Programming Skills</h1>
+    <div class="flex-container">
+        <div class="project">
+            <img class="logo2" src="logos/java.png">
+            <h3>Java</h3>
+            <p>6 years of experience</p>
+        </div>
+
+        <div class="project">
+            <img class="logo2" src="logos/cpp.png">
+            <h3>C/C++</h3>
+            <p>3 years of experience</p>
+        </div>
+
+        <div class="project">
+            <img class="logo2" src="logos/python.png">
+            <h3>Python</h3>
+            <p>4 years of experience</p>
+        </div>
+
+        <div class="project">
+            <img class="logo2" src="logos/html.png">
+            <h3>HTML/CSS</h3>
+            <p>5 years of experience</p>
+        </div>
+
+        <div class="project">
+            <img class="logo2" src="logos/javascript.png">
+            <h3>Javascript / Node.js</h3>
+            <p>5 years of experience</p>
+        </div>
+
+        <div class="project">
+            <img class="logo2" src="logos/react.png">
+            <h3>React / React Native</h3>
+            <p>1 year of experience</p>
+        </div>
+
+        <div class="project">
+            <img class="logo2" src="logos/redux.png">
+            <h3>Redux</h3>
+            <p>1 year of experience</p>
+        </div>
+
+        <div class="project">
+            <img class="logo2" src="logos/csharp.png">
+            <h3>C#</h3>
+            <p>2 years of experience</p>
+        </div>
+
+        <div class="project">
+            <img class="logo2" src="logos/sql.png">
+            <h3>SQL</h3>
+            <p>1 year of experience</p>
+        </div>
+
+        <div class="project">
+            <img class="logo2" src="logos/swift.png">
+            <h3>Swift</h3>
+            <p>1 year of experience</p>
+        </div>
+
+        <div class="project">
+            <img class="logo2" src="logos/bash.png">
+            <h3>Bash</h3>
+            <p>3 years of experience</p>
+        </div>
+    </div>
+    <h1>Experience</h1>
+    <div class="flex-container" id="projects">
+        <div class="project">
+            <a href="https://mdp.engin.umich.edu/feast_projects/telemann-chorale/" target="_blank">
+                <h2>Telemann Chorale Project</h2>
+                <img class="logo2" src="logos/telemann.jpg">
+                <p>
+                    Collaborated with a faculty-led team of students on a computational study of creativity in baroque
+                    vocal music.
+                    Designed a computation model to realize baroque-era chorales based off computational linguistics and
+                    contrapuntal grammar.
+                    Programmed the model using custom data structures and backtracking algorithms. The purpose of the
+                    project is to make a computational
+                    model that can realize 4-part chorales.
+                </p>
+                <div class="madeWithContainer">
+                    <div>Python</div>
+                </div>
             </a>
         </div>
-    </body>
+        <div class="project">
+            <a href="https://rater8.com/" target="_blank">
+                <h2>rater8</h2>
+                <img class="logo2" src="logos/rater8.png">
+                <p>
+                    Implemented various aspects of the front-end and back-end of the rater8 Web Application
+                    using tools in the .NET ecosystem like C#, SSMS, MySQL, Razor, and more.
+                </p>
+                <div class="madeWithContainer">
+                    <div>C#</div>
+                    <div>SQL</div>
+                    <div>Razor</div>
+                    <div>IIS</div>
+                    <div>Windows Server</div>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://www.producelocator.com/" target="_blank">
+                <h2>Produce Locator</h2>
+                <img class="logo2" src="logos/produce-locator.svg">
+                <p>
+                    Full stack web application focused on improving access, convenience, and awareness of cheap fresh
+                    produce
+                    across New York City and around the United States. I was a part of a 6 person team for this project
+                    developing
+                    the front end, back end, api, and database.
+                </p>
+                <div class="madeWithContainer">
+                    <div>Node.js</div>
+                    <div>React</div>
+                    <div>Redux</div>
+                    <div>MongoDB</div>
+                    <div>Express</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="project">
+            <a href="https://www.donewaiting.org/" target="_blank">
+                <h2>Done Waiting</h2>
+                <img class="logo2" src="logos/DoneWaitingLogo.png">
+                <p>
+                    Contributed in implementing the front end, back end, and database of the Done Waiting
+                    Voter Database and Web Application.
+                    Co-led the front end team, designed the user interface,
+                    and interacted with Firebase database.
+                </p>
+                <div class="madeWithContainer">
+                    <div>Python</div>
+                    <div>Flask</div>
+                    <div>React</div>
+                    <div>Node.js</div>
+                    <div>Google Firebase</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <h1>Projects</h1>
+    <div class="flex-container" id="projects">
+        <div class="project">
+            <a href="http://eqdraw.herokuapp.com/" target="_blank">
+                <h2>EqDraw</h2>
+                <img class="logo2" src="logos/eqdraw_logo.png">
+                <p>Real-time online drawing and messaging application where
+                    clients can draw, erase, and chat on the canvas simultaneously.</p>
+                <div class="madeWithContainer">
+                    <div>HTML/CSS</div>
+                    <div>JavaScript</div>
+                    <div>Socket.io</div>
+                    <div>p5.js</div>
+                    <div>Heroku API</div>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/pas-code/career-day-sorter" target="_blank">
+                <h2>Career Day</h2>
+                <img class="logo2" src="logos/career.png">
+                <p>Sorted 800 students to their preferred Career Day speakers in
+                    accordance with their top choices and an assortment of variables.
+                    Collaborated with a team of 12 student programmers.</p>
+                <div class="madeWithContainer">
+                    <div>Java</div>
+                    <div>Python</div>
+                    <div>oauth</div>
+                    <div>HTML/CSS</div>
+                    <div>Git Team Meanagement</div>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/JarrettBierman/JarrettBierman.github.io" target="_blank">
+                <h2>Portfolio Website</h2>
+                <img class="logo2" src="logos/website_logo.png">
+                <p>Created and maintained a website holding resume, contact, and bio information.
+                    Created by scratch by yours truly</p>
+                <div class="madeWithContainer">
+                    <div>HTML/CSS</div>
+                    <div>JavaScript/JQuery</div>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/JarrettBierman/PlaylistBattle" target="_blank">
+                <h2>PlaylistBattle</h2>
+                <img class="logo2" src="logos/spotify.png">
+                <p>Web based game that tests your knowledge on your own Spotify playlists.</p>
+                <div class="madeWithContainer">
+                    <div>Python</div>
+                    <div>Flask</div>
+                    <div>HTML/CSS</div>
+                    <div>JavaScript</div>
+                    <div>Spotify & Youtube Web APIs</div>
+                </div class="madeWithContainer">
+            </a>
+        </div>
+        <div class="project">
+            <h2>Stock Market Simulator</h2>
+            <img class="logo2" src="logos/stockmarket.png">
+            <p>
+                Created as a project for EECS 281 (Advanced Data Structures and Algorithms) as an application of
+                stacks, queues, and priority queues.
+                Designed "buyers" and "sellers" and implemented their interactions with each other on the market.
+                Constructed a streaming algorithm the overlooks which entire market and determines the most and
+                least promising stocks to buy.
+            </p>
+            <div class="madeWithContainer">
+                <div>C++</div>
+            </div class="madeWithContainer">
+        </div>
+        <div class="project">
+            <a href="https://github.com/JarrettBierman/CoolColoring" target="_blank">
+                <h2>CoolColoring</h2>
+                <img class="logo2" src="logos/CoolColoring.png">
+                <p>Web based game that tests your knowledge on your own Spotify playlists.</p>
+                <div class="madeWithContainer">
+                    <div>HTML/CSS</div>
+                    <div>JavaScript</div>
+                    <div>p5.js</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="grow">
+        <a href="https://github.com/JarrettBierman" target="_blank">
+            <img class="logo" src="logos/github.png">
+        </a>
+
+        <a href="https://www.linkedin.com/in/jarrett-bierman-0aa6a71ab/" target="_blank">
+            <img class="logo" src="logos/linkedin.png">
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100008701866266&ref=bookmarks" target="_blank">
+            <img class="logo" src="logos/facebook.png">
+        </a>
+    </div>
+</body>
+
 </html>
